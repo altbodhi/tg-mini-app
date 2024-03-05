@@ -87,6 +87,7 @@
         <h1>Buttons</h1>
         <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
         <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <p id="p_out">out</p>
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
@@ -113,10 +114,10 @@
 
         // Function to call showPopup API
         function showPopup() {
-            let str = JSON.stringify(Telegram.WebApp.initDataUnsafe.user, null, 2); 
+            document.getElemetById("p_out").innerText = JSON.stringify(Telegram.WebApp.initDataUnsafe.user, null, 2); 
             Telegram.WebApp.showPopup({
                 title: 'Title',
-                message: str,
+                message: "OK",
                 buttons: [
                     {id: 'link', type: 'default', text: 'Open ton.org'},
                     {type: 'cancel'},
