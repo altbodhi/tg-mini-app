@@ -113,7 +113,7 @@
 
         // Function to call showPopup API
         function showPopup() {
-            let str = JSON.stringify(Telegram.WebApp.initData, null, 2); 
+            let str = JSON.stringify(Telegram.WebApp.initDataUnsafe.user, null, 2); 
             Telegram.WebApp.showPopup({
                 title: 'Title',
                 message: str,
