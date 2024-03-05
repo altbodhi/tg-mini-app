@@ -106,8 +106,7 @@
             text: 'Прикольно'
         });
         Telegram.WebApp.MainButton.onClick(function () {
-            let str = JSON.stringify(Telegram.WebApp.initData, null, 2); 
-            Telegram.WebApp.showAlert(str)
+           Telegram.WebApp.close()
         });	
        
         Telegram.WebApp.MainButton.show();
