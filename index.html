@@ -114,7 +114,7 @@
 
         // Function to call showPopup API
         function showPopup() {
-            document.getElemetById("p_out").innerText = JSON.stringify(Telegram.WebApp.initDataUnsafe.user, null, 2); 
+            document.getElementById("p_out").innerText = JSON.stringify(Telegram.WebApp.initDataUnsafe.user, null, 2); 
             Telegram.WebApp.showPopup({
                 title: 'Title',
                 message: "OK",
